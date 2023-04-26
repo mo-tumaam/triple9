@@ -315,6 +315,10 @@ border-left: 1px solid #00dfc4;
 border-right: 1px solid #00dfc4; 
 }
 
+.form-input input:invalid ~ span{
+	color: red;
+}
+
 .form-input:nth-child(5) span{
 transform: translateX(10px) translateY(-11px);
 padding: 0 10px;

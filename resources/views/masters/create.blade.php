@@ -30,9 +30,9 @@
           <div class="form-input">
             
       <input type="text" name="name" >
-      <span>Name</span>
+      <span class"text-danger"">Name</span>
 @if ($errors->has('name'))
-                            <i class="text-danger">{{ $errors->first('name') }}</i>
+                            <span >{{ $errors->first('name') }}</span>
                         @endif
     </div>
     

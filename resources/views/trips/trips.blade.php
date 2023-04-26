@@ -76,42 +76,42 @@
 
     
     <div class="form-input">
-        <input type="text" name="container"  required autocomplete="off">
+        <input type="text" name="container"   autocomplete="off">
       <span>Container</span>
         @if ($errors->has('container'))
-                            <i class="text-danger">{{ $errors->first('container') }}</i>
+                            <span class="text-danger">{{ $errors->first('container') }}</span>
                         @endif
     </div>
 
     <div class="form-input">
-         <input type="text" name="owner"  required autocomplete="off">
+         <input type="text" name="owner"   autocomplete="off">
                       <span>Consegnee</span>
                         @if ($errors->has('owner'))
-                            <i class="text-danger">{{ $errors->first('owner') }}</i>
+                            <span class="text-danger">{{ $errors->first('owner') }}</span>
                         @endif
      </div>
 
       <div class="form-input">
-         <input type="text" name="destination"   required autocomplete="off">
+         <input type="text" name="destination"    autocomplete="off">
                       <span>Destination</span>
                        @if ($errors->has('destination'))
-                            <i class="text-danger">{{ $errors->first('destination') }}</i>
+                            <span class="text-danger">{{ $errors->first('destination') }}</span>
                         @endif
      </div>
          
     
     <div class="form-input">
-         <input type="number" name="rate"  autocomplete="off" required>
+         <input type="number" name="rate"  autocomplete="off" >
                       <span>Trip Rate</span>
                        @if ($errors->has('rate'))
-                            <i class="text-danger">{{ $errors->first('rate') }}</i>
+                            <span class="text-danger">{{ $errors->first('rate') }}</span>
                         @endif
      </div>
      <div class="form-input">
-      <input type="date" name="date" required autocomplete="off">
+      <input type="date" name="date" autocomplete="off">
                 <span>LoadingDate</span>
                  @if ($errors->has('rate'))
-                            <i class="text-danger">{{ $errors->first('rate') }}</i>
+                            <span class="text-danger">{{ $errors->first('rate') }}</span
                         @endif
     </div>
   

@@ -1,0 +1,147 @@
+.section-form{
+	display: grid;
+	grid-template-columns: 80%;
+	justify-content: center;
+	margin-top: 3.5rem;
+
+}
+
+.section-form .block-body{
+	grid-template-columns: 100%;
+}
+.section-form .card-body{
+
+	display: grid;
+	
+}
+.inline-form{
+	display: grid;
+	justify-self: center;
+	grid-template-columns: 100%;
+	grid-gap: 2rem;
+	padding: 2rem 0rem;
+    width: 60%;
+background-image: linear-gradient(rgba(0, 0, 100, 0.8), rgba(0, 0, 100, 0.8)), url(./img/img1.jpg); 
+background-position: center;
+background-size: cover;
+box-sizing: border-box;
+
+	
+}
+.inline-form:hover{
+	width: 100%;
+	transition: width 300ms;
+}
+
+.block-form{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-row-gap: 1rem;
+	background-image: linear-gradient(rgba(0, 0, 100, 0.8), rgba(0, 0, 100, 0.8)), url(./img/img1.jpg); 
+background-position: center;
+background-size: cover;
+box-sizing: border-box;
+border-radius: 0rem;
+padding: 2rem 0;
+align-content: center;
+justify-content: center;
+}
+
+ .form-group{
+	display: grid;
+
+	justify-self:center;
+}
+
+.form-group input{
+		background: transparent;
+		border: 1PX solid var(--main-color);
+		height: 32px;
+	
+		padding: 0 20px;
+		box-sizing: border-box;
+		outline: none;
+		
+		border: none;
+		color: #fff;
+		width: 90%;
+		border-bottom: 1px solid var(--main-color);
+	
+	}
+	.form-group input::placeholder{
+		color: #fff;
+		letter-spacing: .2rem;
+		font-size: 1rem;
+	}
+.block-form .form-group:last-child {
+		
+		justify-self:end;
+		
+		margin-right: 2rem;
+       
+	}
+ .form-group button{
+ 
+ 	justify-self:start;
+ background: var(--main-color);
+ 	border: 1PX solid var(--main-color);
+ 	height: 32px;
+ 	font-size: 1.2rem;
+ 	border-radius: 2rem;
+ 	padding: 0 20px;
+ 	box-sizing: border-box;
+ 	outline: none;
+ 	color: white;
+ }	
+ .form-group button:hover{
+ 	opacity: .8;
+ }
+
+@media only screen and (max-width: 1500px){
+	.block-form{
+		grid-template-columns: repeat(3, 1fr);
+	}
+	
+}
+
+@media only screen and (max-width: 960px){
+
+		
+		.block-form{
+		grid-template-columns: 1fr 1fr;
+
+	}
+	.inline-form{
+		grid-template-columns: 1fr 1fr;
+			width: 100%;
+	}
+	.block-fworm .form-group:last-child {
+		
+		justify-self:end;
+		grid-column: 3 / 2;
+		margin-right: 0;
+       
+	}
+.form-group{
+	width: 90%;
+}	
+
+}
+
+@media only screen and (max-width: 568px){
+
+	.inline-form,
+	.block-form{
+		grid-template-columns: 1fr;
+		justify-content: end;
+	}
+		.blowck-form .form-group:last-child {
+		
+		justify-self:end;
+		grid-row: 5 / 3;
+		
+		margin-right: 0rem;
+       
+	}
+
+}

@@ -28,7 +28,9 @@
             
 @endforeach
       </select>
-                
+             @if ($errors->has('allclient_id'))
+                            <i class="dis_error">{{ $errors->first('allclient_id') }}</i>
+                        @endif    
     </div>
 
          <div class="form-input">
@@ -39,7 +41,9 @@
             
 @endforeach
       </select>
-                
+            @if ($errors->has('ledger_id'))
+                            <i class="dis_error">{{ $errors->first('ledger_id') }}</i>
+                        @endif      
     </div>
 
     <div class="form-input">

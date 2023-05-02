@@ -84,11 +84,11 @@
                                 <td> 
                                   <?php 
                                   $fdate=$employee->startDate;
-                                  $ldate=$employee->created_at;
+                                  //$ldate=$employee->created_at;
                                   $s=$employee->salary;
 
                                   $dtime1 =new DateTime($fdate);
-                                  $dtime2 =new DateTime($ldate);
+                                  $dtime2 =new DateTime('now');
 
                                   $interval= $dtime1->diff($dtime2);
                                   $days=$interval->format('%m');

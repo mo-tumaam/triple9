@@ -9,6 +9,7 @@ use App\Http\Controllers\LedgerController;
 use App\Http\Controllers\TripController;
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\ReceiptController;
+use App\Http\Controllers\Expenses;
 
 /*
 |--------------------------------------------------------------------------
@@ -44,7 +45,8 @@ Route::get('/payroll', function () {
     return view('payroll.createPayroll');
 });
 
-
+Route::get('tripfile/{id}', [App\Http\Controllers\Expenses::class, 'TripFile']);
+//Route::get('tripfile/{id}', [App\Http\Controllers\Expenses::class, 'SearchExp']);
 Route::resource('pay', Payroll::class);
 Route::resource('items', Items::class);
 Route::resource('subitems', SubItems::class);
@@ -53,6 +55,7 @@ Route::resource('ledger', LedgerController::class);
 Route::resource('trip', TripController::class);
 Route::resource('clients', ClientController::class);
 Route::resource('receive', ReceiptController::class);
+Route::resource('expenses', Expenses::class);
 Auth::routes();
 
 //Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

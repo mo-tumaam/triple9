@@ -76,44 +76,54 @@
 
     
     <div class="form-input">
+       
         <input type="text" name="container"   autocomplete="off">
-      <span>Container</span>
         @if ($errors->has('container'))
-                            <span class="text-danger">{{ $errors->first('container') }}</span>
+                            <i class="dis_error">{{ $errors->first('container') }}</i>
                         @endif
+      <span>Container</span>
+       
     </div>
 
-    <div class="form-input">
+    <div class="form-input"> 
+    
+                            
+                       
          <input type="text" name="owner"   autocomplete="off">
-                      <span>Consegnee</span>
-                        @if ($errors->has('owner'))
-                            <span class="text-danger">{{ $errors->first('owner') }}</span>
+@if ($errors->has('owner'))
+                            <i class="dis_error">{{ $errors->first('owner') }}</i>
                         @endif
+                      <span>Consegnee</span>
+                    
      </div>
 
       <div class="form-input">
+        
          <input type="text" name="destination"    autocomplete="off">
-                      <span>Destination</span>
-                       @if ($errors->has('destination'))
-                            <span class="text-danger">{{ $errors->first('destination') }}</span>
+          @if ($errors->has('destination'))
+                            <i class="dis_error">{{ $errors->first('destination') }}</i>
                         @endif
+                      <span>Destination</span>
+                      
      </div>
          
     
     <div class="form-input">
          <input type="number" name="rate"  autocomplete="off" >
-                      <span>Trip Rate</span>
-                       @if ($errors->has('rate'))
-                            <span class="text-danger">{{ $errors->first('rate') }}</span>
+          @if ($errors->has('rate'))
+                            <i class="dis_error">{{ $errors->first('rate') }}</i>
                         @endif
+                      <span>Trip Rate</span>
+                      
      </div>
      <div class="form-input">
       <input type="date" name="date" autocomplete="off">
-                <span>LoadingDate</span>
-                 @if ($errors->has('rate'))
-                            <span class="text-danger">{{ $errors->first('rate') }}</span
+       @if ($errors->has('date'))
+                            <i class="dis_error">{{ $errors->first('date') }}</i>
                         @endif
-    </div>
+                <span>LoadingDate</span>
+                
+  </div>
   
     
       

@@ -255,6 +255,33 @@ padding: 0rem .5rem;
 	position: relative;
 }
 
+.form-input .dis_error{
+	position: absolute;
+	background: #fff;
+	top: 0;
+	left: 0;
+	width: 100%;
+	
+	text-align: center;
+	border-radius: 4px;
+	color: red;
+	pointer-events: none;
+	transition: 0.5s;
+	z-index: 1;
+
+}
+
+form .form-input input:invalid ~ .dis_error{
+height: 0px;
+}
+
+
+form .form-input input:focus ~ .dis_error{
+	overflow: hidden;
+	height: 0px;
+	transition: .3s;
+}
+
 
  .block-details .form-input input,
   .block-details .form-input select,
@@ -316,7 +343,7 @@ border-right: 1px solid #00dfc4;
 }
 
 .form-input input:invalid ~ span{
-	color: red;
+	color: #fff;
 }
 
 .form-input:nth-child(5) span{

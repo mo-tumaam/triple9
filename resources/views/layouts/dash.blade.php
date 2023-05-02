@@ -21,6 +21,7 @@
      <link href="{{ asset('css/mystyle/forms.css') }}" rel="stylesheet">
      
      <link href="{{ asset('css/mystyle/pdf.css') }}" rel="stylesheet">
+      <link href="{{ asset('css/mystyle/expenses.css') }}" rel="stylesheet">
    
    
       <link href="{{ asset('css/mystyle/style.css') }}" rel="stylesheet">
@@ -66,6 +67,7 @@
            <li> <a href="{{route('items.create')}}"> <span class="icon  icon-basic-home"></span> <span>Asset </span></a></li>
            <li> <a href="{{route('clients.create')}}"> <span class="icon  icon-basic-home"></span> <span>Client </span></a></li>
             <li> <a href="{{route('receive.create')}}"> <span class="icon  icon-basic-home"></span> <span>Receipt </span></a></li>
+              <li> <a href="{{route('expenses.index')}}"> <span class="icon  icon-basic-home"></span> <span>Expenses </span></a></li>
 
         <li> <a href="{{ route('logout') }}" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
